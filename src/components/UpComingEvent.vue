@@ -15,11 +15,13 @@
                             <div v-if="index < 2">
                                 <img :src="`/images/artist-event-${item.path_img}-250x300.jpg`" alt="" class="h-100">
                             </div>
-                            <div class="p-2 d-flex flex-column justify-content-center"
+                            <div class="p-4 d-flex flex-column justify-content-center"
                                 :class="{ 'text-end': index >= 2 }">
-                                <div class="text-secondary">{{ item.date }}</div>
+                                <div class="text-secondary py-2">{{ item.date }}</div>
                                 <h4>{{ item.event }}</h4>
-                                <div class="text-secondary"><i class="fa-solid fa-location-dot"></i>{{ item.location }}
+                                <div class="text-secondary"><i class="fa-solid fa-location-dot px-1"></i>{{
+                                        item.location
+                                }}
                                 </div>
                             </div>
                             <div v-if="index >= 2">
