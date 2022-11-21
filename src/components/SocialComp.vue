@@ -1,6 +1,7 @@
 <template>
     <div>
         <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-user"></i>
         ciao
     </div>
 </template>

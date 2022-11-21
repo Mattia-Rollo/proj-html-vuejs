@@ -1,13 +1,14 @@
-@use '../style/partials/mixins' as * ;
-@use '../style/partials/variables' as * ;
+@use "../style/partials/mixins" as *;
+@use "../style/partials/variables" as *;
 
-$fa-font-path: './webfonts';
-@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
-@import '@fortawesome/fontawesome-free/scss/solid.scss';
-@import 'bootstrap/scss/bootstrap';
+// $fa-font-path: "./css";
+$fa-font-path: "./webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+@import "bootstrap/scss/bootstrap";
 
-@import url('https://fonts.cdnfonts.com/css/rosella');
+@import url("https://fonts.cdnfonts.com/css/rosella");
 
 body {
-    
 }
