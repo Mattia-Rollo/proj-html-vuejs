@@ -1,15 +1,26 @@
 <template>
     <div class=" text-center banner ">
         <span>start TOMORROW! Our biggest event of the year... </span>
-        <span><i class="fa-regular fa-clock"></i><span class="hours"> 00:</span><span>00:</span><span>00
-            </span></span>
+        <span><i class="fa-regular fa-clock"></i><span>{{ getTime() }}</span></span>
         <button class="btn btn-danger"> Get Ticket</button>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'BannerComp'
+    name: 'BannerComp',
+    data() {
+        return {
+            time: new Date('0')
+        }
+    },
+    methods: {
+        getTime() {
+            this.time.setHours(0, 0, 0, 0);
+            console.log(this.time)
+            return this.time.toLocaleTimeString();
+        }
+    },
 }
 </script>
 
