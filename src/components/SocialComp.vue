@@ -1,8 +1,10 @@
 <template>
     <div>
         <i class="fa-brands fa-twitter"></i>
-        <i class="fa-solid fa-user"></i>
-        ciao
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
     </div>
 </template>
 
@@ -17,5 +19,10 @@ export default {
 
 div {
     color: gray;
+
+    i {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
 }
 </style>
