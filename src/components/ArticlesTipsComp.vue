@@ -9,7 +9,8 @@
                 <div class="row gx-5 ">
                     <div class="col">
                         <div class="mycard  top-50">
-                            <img src="/images/120084500_197897808368764_8114555493043279565_n.jpg" alt="" class="">
+                            <img src="/images/120084500_197897808368764_8114555493043279565_n.jpg" alt=""
+                                class="img-fluid">
                             <div class="body-mycard p-2">
 
                                 <div class="text-secondary">ARTIST</div>
@@ -18,9 +19,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-6">
                         <div class="mycard center position-relative"><img src="/images/artist-blog-02-500x680.jpg"
-                                alt="" class="img-fluid">
+                                alt="" class="">
                             <div class=" position-absolute bottom-0 p-3">
                                 <div class="text-secondary">ARTIST</div>
                                 <h3>Brush Stokes Energize</h3>
@@ -82,12 +83,21 @@ export default {
 
 
         img {
-            max-width: 100%;
+            // max-width: 100%;
         }
     }
 
 
 
+}
+
+.mycard.center {
+    overflow: hidden;
+
+    img {
+        width: 105%;
+        object-fit: cover;
+    }
 }
 
 .col:first-child {

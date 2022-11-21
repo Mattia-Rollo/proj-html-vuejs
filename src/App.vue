@@ -9,6 +9,7 @@
   <Testimonials />
   <NewCourses />
   <ArticlesTipsComp />
+  <UpComingEvent />
 </template>
 
 <script>
@@ -19,10 +20,11 @@ import HowToCoachComp from './components/HowToCoachComp.vue';
 import JumbotronComp from './components/JumbotronComp.vue';
 import NewCourses from './components/NewCourses.vue';
 import Testimonials from './components/Testimonials.vue';
+import UpComingEvent from './components/UpComingEvent.vue';
 import VideoComp from './components/VideoComp.vue';
 
 export default {
-  components: { HeaderComponent, BannerCom, JumbotronComp, HowToCoachComp, VideoComp, Testimonials, NewCourses, ArticlesTipsComp }
+  components: { HeaderComponent, BannerCom, JumbotronComp, HowToCoachComp, VideoComp, Testimonials, NewCourses, ArticlesTipsComp, UpComingEvent }
 }
 </script>
 
