@@ -1,12 +1,16 @@
 <template>
-  <div>
-    <h2>Testimonals</h2>
-  </div>
+  <BannerCom />
+  <header>
+    <HeaderComponent />
+  </header>
 </template>
 
 <script>
-export default {
+import BannerCom from './components/BannerCom.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
 
+export default {
+  components: { HeaderComponent, BannerCom }
 }
 </script>
 
