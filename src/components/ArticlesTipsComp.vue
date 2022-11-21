@@ -63,7 +63,7 @@ export default {
     background-color: $grey-Articles-Tips;
     // height: 100vh;
     background-image: url('/images/maxcoach-shape-03.png');
-    background-size: 150%;
+    background-size: 100%;
 
     background-position: center;
     background-repeat: no-repeat;
