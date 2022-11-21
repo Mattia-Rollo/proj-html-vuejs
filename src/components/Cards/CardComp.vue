@@ -1,0 +1,49 @@
+<template>
+    <div class="col-3" v-for="(item, index) in array" :key="index">
+        <div class="mycard">
+            <img :src="path + item.image + typeImage" :alt="item.alt" class="img-fluid">
+            <div v-if="item.price" class="price">{{ item.price }}</div>
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.overview }}</p>
+            <div v-if="item.lessons" class="info">
+                <span><i class="fa-regular fa-file"></i><span>{{ item.lessons }}</span> Lessons</span>
+                <span><i class="fa-regular fa-user"></i><span>{{ item.students }}</span> Students</span>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'CardComp',
+    props: {
+        array: Array,
+        path: String,
+        typeImage: String
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+@use '../../assets/style/partials/variables' as *;
+
+.mycard {
+    height: 100%;
+
+}
+
+.price {
+    font-weight: 700;
+    color: $thunderbird-red;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.info {
+    color: grey;
+
+    span {
+        padding: 0 0.5rem;
+    }
+}
+</style>

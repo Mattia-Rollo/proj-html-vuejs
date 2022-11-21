@@ -14,7 +14,7 @@
                 <h2 class="text-center">I understand what it take to create. I can help you with</h2>
             </div>
             <div class="row align-items-end py-5">
-                <CardHowToComp :array="listCards" />
+                <CardComp :array="listCards" :path="'/public/images/artist-box-image-'" :typeImage="'.png'" />
             </div>
             <div class="row py-5 justify-content-between">
                 <div class="col-5 position-relative">
@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import CardHowToComp from './HowToCards/CardHowToComp.vue';
+import CardComp from './Cards/CardComp.vue';
 
 export default {
     name: "HowToCoachComp",
@@ -75,7 +75,7 @@ export default {
             ]
         };
     },
-    components: { CardHowToComp }
+    components: { CardComp }
 }
 </script>
 

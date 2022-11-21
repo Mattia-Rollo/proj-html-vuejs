@@ -44,7 +44,7 @@ export default {
 @use '../assets/style/partials/variables' as *;
 
 .jumbotron {
-    height: 100vh;
+    height: calc(100vh - 80px);
     background-color: $bg-color-jumbotron;
     position: relative;
     overflow: hidden;
@@ -124,7 +124,8 @@ export default {
     .hero {
         top: 50%;
         left: 50%;
-        height: 200px;
+        // height: 200px;
+        max-width: 700px;
         z-index: 1000;
 
         transform: translate(-50%, -50%);
@@ -140,6 +141,12 @@ export default {
         h1 {
             // position: relative;
             padding: 1rem;
+            // font-size: 3rem;
+
+            // @media screen and (width: 500px) {
+            //     font-size: 1rem;
+
+            // }
         }
 
         .btn {

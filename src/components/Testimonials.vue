@@ -3,17 +3,22 @@
         <div class="container">
             <div class="uptitle">Testimonials</div>
             <h2 class="text-center">Why do people love me?</h2>
-            <div class="box"></div>
-            <div class="row">
-                cards
+            <!-- <div class="box"></div> -->
+            <div class="row pb-5">
+                <CardTestimonial :array="listTestimonials" />
+            </div>
+            <div class="thumb">
+                <span class="dot" v-for="(item, index) in listTestimonials"></span>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import CardTestimonial from './TestimonialsCard/CardTestimonal.vue'
 export default {
     name: 'Testimonals',
+    components: { CardTestimonial },
     data() {
         return {
             listTestimonials: [
@@ -26,7 +31,7 @@ export default {
 
                 },
                 {
-                    title: 'High leve of efficency and scientific teaching methods',
+                    title: 'High level of efficency and scientific teaching methods',
                     comment: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me',
                     avatarImg: '02',
                     name: 'Mina Hollance',
@@ -41,14 +46,14 @@ export default {
                     job: '/IT Specialist',
 
                 },
-                {
-                    title: 'Professional team of specialists and passionate mentors at reach',
-                    comment: 'I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
-                    avatarImg: '04',
-                    name: 'Madley Pondor',
-                    job: '/IT Specialist',
+                // {
+                //     title: 'The Best coaching I ever had',
+                //     comment: 'With Thrive’s help, we were able to increase the functionality of our website dramatically while cutting our costs. Our website is much more easy to use, has tons of more features than before and is incredibly easy to maintain.',
+                //     avatarImg: '04',
+                //     name: 'Joe Satriani',
+                //     job: '/CEO google',
 
-                },
+                // },
             ]
         }
     },
@@ -62,8 +67,27 @@ export default {
     padding: 1rem 0;
     background-color: $beige-bg;
 
-    .box {
-        height: 300px;
+    .box {}
+
+    h2 {
+        padding: 0 0 80px 0;
     }
+}
+
+.thumb {
+    display: table;
+    margin: 0 auto;
+}
+
+.dot {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 1000;
+    margin: 0 1rem;
 }
 </style>
