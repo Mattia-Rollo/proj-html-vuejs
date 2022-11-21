@@ -7,7 +7,9 @@
 <script>
 export default {
     name: 'NavbarComp',
-    props: ['menu']
+    props: {
+        menu: Array
+    }
 
 }
 </script>
