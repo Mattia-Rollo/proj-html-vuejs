@@ -8,32 +8,35 @@
             </path>
         </svg>
 
-        <div class="container py-5">
-            <div class="py-5">
-                <div class="uptitle">Artist coaching</div>
-                <h2 class="text-center">I understand what it take to create. I can help you with</h2>
-            </div>
-            <div class="row align-items-end py-5">
-                <CardComp :array="listCards" :path="'/public/images/artist-box-image-'" :typeImage="'.png'" />
-            </div>
-            <div class="row py-5 justify-content-between">
-                <div class="col-5 position-relative">
-                    <div class="text-center"><img src="/public/images/artist-quote-icon.png" alt=""></div>
-                    <div class="fw-bold display-6 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Natus,
-                        reiciendis?</div>
-                    <div class="uptitle py-5">Martin Garrix</div>
+        <div class="mycontainer">
+            <div class="container py-5">
+                <div class="py-5">
+                    <div class="uptitle">Artist coaching</div>
+                    <h2 class="text-center">I understand what it take to create. I can help you with</h2>
                 </div>
-                <div class="col-6">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quo fugiat quidem illum at
-                        corporis?
-                        Repellat perferendis placeat sed itaque odio error aut rem in maiores voluptatibus soluta,
-                        sapiente
-                        recusandae numquam laborum corrupti consequuntur pariatur! Ducimus natus voluptates earum
-                        laudantium
-                        ex at nulla eos maxime eveniet voluptate, ullam doloribus aliquam!</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, delectus?</p>
-                    <button class="btn btn-danger">get started today</button>
+                <div class="row align-items-end py-5">
+                    <CardComp :array="listCards" :path="'/public/images/artist-box-image-'" :typeImage="'.png'" />
+                </div>
+                <div class="row py-5 justify-content-between">
+                    <div class="col-5 position-relative">
+                        <div class="text-center"><img src="/public/images/artist-quote-icon.png" alt=""></div>
+                        <div class="fw-bold display-6 text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Natus,
+                            reiciendis?</div>
+                        <div class="uptitle py-5">Martin Garrix</div>
+                    </div>
+                    <div class="col-6">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quo fugiat quidem illum at
+                            corporis?
+                            Repellat perferendis placeat sed itaque odio error aut rem in maiores voluptatibus soluta,
+                            sapiente
+                            recusandae numquam laborum corrupti consequuntur pariatur! Ducimus natus voluptates earum
+                            laudantium
+                            ex at nulla eos maxime eveniet voluptate, ullam doloribus aliquam!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, delectus?</p>
+                        <button class="btn btn-danger">get started today</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,5 +110,9 @@ export default {
         top: 400px;
         z-index: -1;
     }
+}
+
+.mycontainer {
+    max-width: 1100px;
 }
 </style>
