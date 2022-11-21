@@ -1,16 +1,21 @@
 <template>
     <div>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
 
     </div>
 </template>
 
 <script>
 export default {
-    name: 'SocialComp'
+    name: 'SocialComp',
+    data() {
+        return {
+
+        }
+    },
 }
 </script>
 
@@ -18,11 +23,12 @@ export default {
 @use '../assets/style/partials/variables' as *;
 
 div {
-    color: gray;
+    color: $cod-gray;
 
-    i {
+    a {
+        color: $cod-gray;
         font-size: 1.5rem;
-        padding: 0.8rem;
+        padding: 0.5rem;
     }
 }
 </style>
