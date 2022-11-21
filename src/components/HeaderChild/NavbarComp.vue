@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use '../assets/style/partials/variables' as *;
+@use '../../assets/style/partials/variables' as *;
 
 ul {
     list-style: none;

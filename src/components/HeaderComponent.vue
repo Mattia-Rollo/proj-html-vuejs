@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import NavbarComp from './NavbarComp.vue';
-import SocialComp from './SocialComp.vue';
+import NavbarComp from './HeaderChild/NavbarComp.vue';
+import SocialComp from './HeaderChild/SocialComp.vue';
 
 export default {
     nam: "HeaderComponent",
