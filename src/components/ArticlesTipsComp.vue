@@ -16,8 +16,12 @@
                                 :class="index == 1 ? 'position-absolute bottom-0 p-3' : 'body-mycard p-2'">
 
                                 <div class="text-secondary">ARTIST</div>
-                                <h3>{{ card.title }}</h3>
-                                <div class="text-secondary">{{ card.date }}</div>
+                                <h4>{{ card.title }}</h4>
+                                <div class="text-secondary">
+                                    <span>{{ card.date }}</span>
+                                    <span><i class="fa-regular fa-eye"></i>{{ card.views }}</span>
+                                </div>
+
                             </div>
                         </div>
                     </div>
