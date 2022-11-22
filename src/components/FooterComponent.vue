@@ -181,7 +181,8 @@ a:hover {
 
     a {
         text-decoration: none;
-        background-color: $beige;
+        background-color: rgb(222, 102, 28);
+        color: $white;
         padding: 1rem 1rem;
         width: 55px;
         display: block;
