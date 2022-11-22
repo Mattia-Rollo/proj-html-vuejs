@@ -31,7 +31,7 @@ export default {
 @use '../assets/style/partials/variables' as *;
 
 .wrapper {
-    height: 150px;
+    height: 130px;
     background-color: $blue-bg-newsletter;
     position: relative;
     overflow: hidden;
