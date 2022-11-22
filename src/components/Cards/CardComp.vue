@@ -1,5 +1,5 @@
 <template>
-    <div class="col-3" v-for="(item, index) in array" :key="index">
+    <div class="col-lg-3 col-md" v-for="(item, index) in array" :key="index">
         <div class="mycard">
             <img :src="path + item.image + typeImage" :alt="item.alt" class="img-fluid">
             <div v-if="item.price" class="price">{{ item.price }}</div>

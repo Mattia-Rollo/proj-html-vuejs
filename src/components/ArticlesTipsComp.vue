@@ -7,21 +7,23 @@
                     <h2 class="text-center">Latest from the blog</h2>
                 </div>
                 <div class="row gx-5 ">
-                    <div class="col">
-                        <div class="mycard  top-50">
-                            <img src="/images/120084500_197897808368764_8114555493043279565_n.jpg" alt=""
-                                class="img-fluid">
-                            <div class="body-mycard p-2">
+                    <div class="" :class="index > 0 && index < 2 ? 'col-md-6 col-12' : 'col'"
+                        v-for="(card,index) in cards" :key="index">
+                        <div class="mycard "
+                            :class="index < 1 ? 'top-50' : index > 1 ? '' : 'center position-relative'">
+                            <img :src="card.img" alt="" class="img-fluid">
+                            <div class="body-mycard p-2"
+                                :class="index == 1 ? 'position-absolute bottom-0 p-3' : 'body-mycard p-2'">
 
                                 <div class="text-secondary">ARTIST</div>
-                                <h3>Brush Stokes Energize</h3>
-                                <div class="text-secondary">May 15, 2020</div>
+                                <h3>{{ card.title }}</h3>
+                                <div class="text-secondary">{{ card.date }}</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="mycard center position-relative"><img src="/images/artist-blog-02-500x680.jpg"
-                                alt="" class="">
+                    <!-- <div class="col-6">
+                        <div class="mycard center position-relative">
+                            <img src="/images/artist-blog-02-500x680.jpg" alt="" class="">
                             <div class=" position-absolute bottom-0 p-3">
                                 <div class="text-secondary">ARTIST</div>
                                 <h3>Brush Stokes Energize</h3>
@@ -38,7 +40,7 @@
                                 <div class="text-secondary">May 15, 2020</div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -50,7 +52,29 @@ export default {
     name: 'ArticlesTipsComp',
     data() {
         return {
-
+            cards: [
+                {
+                    img: '/images/120084500_197897808368764_8114555493043279565_n.jpg',
+                    title: 'Brush Strokes Energize Trees in Paintings',
+                    date: 'May 15, 2020',
+                    views: '688',
+                    link: '',
+                },
+                {
+                    img: '/images/artist-blog-02-500x680.jpg',
+                    title: 'Connestion Between Self- Portraits and Identity',
+                    date: 'May 15, 2020',
+                    views: '397',
+                    link: '',
+                },
+                {
+                    img: '/images/artist-blog-01-480x356.jpg',
+                    title: 'Pocket Sized Notebooks Hold Miniature Paintings',
+                    date: 'May 15,2020',
+                    views: '603',
+                    link: '',
+                },
+            ]
 
         }
     },
