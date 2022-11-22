@@ -14,7 +14,6 @@
     <NewsLetter />
   </main>
   <footer>
-
     <FooterComponent />
   </footer>
 </template>

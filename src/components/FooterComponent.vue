@@ -18,19 +18,21 @@
                 <div class="col-2" v-for="(item, index) in listLinks" :key="index">
                     <h4>{{ item.title }}</h4>
                     <ul>
-                        <li v-for="(item, index) in item.links" :key="index">{{ item.name }}</li>
+                        <li v-for="(link, index) in item.links" :key="index"><a :href="link.link">{{ link.name }}</a>
+                        </li>
 
                     </ul>
                 </div>
-
                 <div class="col-4">
                     <div class="instagram">
                         <div>
-                            <strong>Instagram</strong><span><a href="">@MAXCOACH</a></span>
+                            <h4 class=" d-inline-block pe-2">Instagram</h4><span class="fs-5"><a
+                                    href="">@maxcoach</a></span>
                         </div>
-                        <img src="/images/120084500_197897808368764_8114555493043279565_n.jpg" alt="">
-                        <img src="/images/120012142_177596140500760_8623485824101406058_n.jpg" alt="" class="m-3">
-                        <img src="/images/120099363_364334431619755_7198812647386067017_n.jpg" alt="">
+                        <a href=""><img src="/images/120084500_197897808368764_8114555493043279565_n.jpg" alt=""></a>
+                        <a href=""><img src="/images/120012142_177596140500760_8623485824101406058_n.jpg" alt=""
+                                class="m-3"></a>
+                        <a href=""><img src="/images/120099363_364334431619755_7198812647386067017_n.jpg" alt=""></a>
 
 
                     </div>
@@ -39,6 +41,7 @@
             </div>
         </div>
         <div class="text-center  text-secondary">@ 2020 MACHCOACH ALL RIGHT RESERVED</div>
+        <div class="scroll-btn"><a href="#" class=""><i class="fa-solid fa-arrow-up"></i></a></div>
     </div>
 </template>
 
@@ -125,6 +128,7 @@ export default {
 
 .wrapper {
     padding: 1rem 0;
+    position: relative;
 }
 
 .address {
@@ -153,9 +157,10 @@ a {
     text-decoration: none;
     color: $boulder;
 
-    a:hover {
-        color: $cod-gray;
-    }
+}
+
+a:hover {
+    color: $cod-gray;
 }
 
 .instagram {
@@ -166,5 +171,24 @@ a {
     a {
         color: $tulip-tree;
     }
+}
+
+.scroll-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+
+    a {
+        text-decoration: none;
+        background-color: $beige;
+        padding: 1rem 1rem;
+        width: 55px;
+        display: block;
+        text-align: center;
+
+        border-radius: 50%;
+    }
+
 }
 </style>
