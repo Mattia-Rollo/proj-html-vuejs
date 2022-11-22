@@ -1,6 +1,6 @@
 <template>
     <div class="col-lg-3 col-md" v-for="(item, index) in array" :key="index">
-        <div class="mycard">
+        <div class="mycard" :class="item.price ? 'move' : ''">
             <img :src="path + item.image + typeImage" :alt="item.alt" class="img-fluid">
             <div :class="item.price ? 'mybody-Card' : ''">
                 <div v-if="item.price" class="price">{{ item.price }}</div>
@@ -32,6 +32,7 @@ export default {
 .mycard {
     height: 100%;
     cursor: pointer;
+    overflow: hidden;
 
     .mybody-Card {
         padding: 1rem;
@@ -46,6 +47,14 @@ export default {
         transform: translateY(-30px);
     }
 
+}
+
+.move img {
+    transition: all 0.5S;
+}
+
+.move:hover img {
+    transform: scale(1.2);
 }
 
 .price {
