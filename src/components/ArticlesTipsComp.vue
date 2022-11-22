@@ -11,15 +11,16 @@
                         v-for="(card,index) in cards" :key="index">
                         <div class="mycard "
                             :class="index < 1 ? 'top-50' : index > 1 ? '' : 'center position-relative'">
-                            <img :src="card.img" alt="" class="img-fluid">
+                            <img :src="card.img" alt="" class="img-fluid" :class="index == 1 ? 'filter' : ''">
                             <div class="body-mycard p-2"
-                                :class="index == 1 ? 'position-absolute bottom-0 p-3' : 'body-mycard p-2'">
+                                :class="index == 1 ? 'position-absolute bottom-0 p-3 text-light' : 'body-mycard p-2'">
 
-                                <div class="text-secondary">ARTIST</div>
-                                <h4>{{ card.title }}</h4>
-                                <div class="text-secondary">
-                                    <span>{{ card.date }}</span>
-                                    <span><i class="fa-regular fa-eye"></i>{{ card.views }}</span>
+                                <div :class="index != 1 ? 'text-secondary' : ''">ARTIST</div>
+                                <div class="display-6 fw-bold" v-if="index == 1">{{ card.title }}</div>
+                                <h4 v-if="index != 1">{{ card.title }}</h4>
+                                <div :class="index != 1 ? 'text-secondary myfontsize' : ''">
+                                    <span id="date"><i class="fa-regular fa-calendar"></i>{{ card.date }}</span>
+                                    <span id="views"><i class="fa-regular fa-eye"></i>{{ card.views }} views</span>
                                 </div>
 
                             </div>
@@ -107,17 +108,35 @@ export default {
     .mycard {
         // width: 200px;
         background-color: $white;
-        box-shadow: 0px 0px 10px 1px rgba(103, 103, 103, 0.406);
+        box-shadow: 0px 0px 10px 1px #67676768;
 
-
-
-        img {
-            // max-width: 100%;
+        span {
+            display: inline-block;
+            padding: 1rem 0 0.5rem 0;
+            padding-right: 0.5rem;
         }
+
+        i {
+            padding-right: 0.5rem;
+        }
+
+
+        .myfontsize {
+            font-size: 0.9rem;
+        }
+
+        #date {}
+
+
+        #views {}
     }
 
 
 
+}
+
+.filter {
+    filter: brightness(0.8);
 }
 
 .mycard.center {
