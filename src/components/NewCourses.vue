@@ -132,7 +132,7 @@ export default {
         z-index: -100;
         // text-transform: uppercase;
         transform: rotate(90deg);
-        -webkit-text-stroke: 1px $beige;
+        -webkit-text-stroke: 1px $primary-color;
     }
 }
 

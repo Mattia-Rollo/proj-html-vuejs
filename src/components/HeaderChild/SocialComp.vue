@@ -30,6 +30,10 @@ div {
         color: $cod-gray;
         font-size: 1.5rem;
         padding: 0.5rem;
+
+        &:hover {
+            color: $primary-color;
+        }
     }
 }
 </style>

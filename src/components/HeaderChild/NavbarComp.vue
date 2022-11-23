@@ -36,7 +36,7 @@ ul {
 
 
         &:hover {
-            color: tomato;
+            color: $primary-color;
             // border-bottom: 2px solid tomato;
 
         }
@@ -58,7 +58,7 @@ ul {
         }
 
         &:hover .border-animated {
-            background-color: tomato;
+            background-color: $primary-color;
             transform-origin: left;
             transform: scaleX(1);
         }
