@@ -10,7 +10,7 @@
                     <h2 class="text-center pb-5">Lest's Work Together</h2>
                 </div>
                 <div class="row g-3">
-                    <div class="col-6" v-for="(item, index) in listEvents" :key="index">
+                    <div class="col-md-6 col-12" v-for="(item, index) in listEvents" :key="index">
                         <div class="mycard d-flex">
                             <div v-if="index < 2">
                                 <img :src="`/images/artist-event-${item.path_img}-250x300.jpg`" alt="" class="h-100">

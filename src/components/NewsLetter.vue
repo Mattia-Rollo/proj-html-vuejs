@@ -1,14 +1,14 @@
 <template>
     <div class="wrapper d-flex">
-        <img src="/images/artist-shape-color-paint-top-left.png" alt="">
+        <img class="d-none d-md-block" src="/images/artist-shape-color-paint-top-left.png" alt="">
 
 
         <div class="container-lg ">
             <div class="row align-items-center text-light h-100">
-                <div class="col ">
+                <div class="col-12 col-md-4">
                     <h3 class=" text-end w-75">NewsLetter to get in Touch</h3>
                 </div>
-                <div class="col-8 ">
+                <div class="col-12 col-md-8 ">
                     <a href="">
                         <div id="email" class="border-bottom border-1 fs-4 d-flex justify-content-between">Your
                             Email <i class="fa-solid fa-arrow-right"></i></div>
@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <img src="/images/artist-shape-color-paint-bottom-right.png" alt="">
+        <img class="d-none d-md-block" src="/images/artist-shape-color-paint-bottom-right.png" alt="">
     </div>
 </template>
 

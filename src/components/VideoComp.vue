@@ -29,6 +29,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/style/partials/variables' as *;
+
 .wrapper {
     position: relative;
     padding: 5rem 0;
@@ -46,7 +48,12 @@ export default {
         position: absolute;
         bottom: 0;
         width: 100%;
+        // background-color: $bayofmany;
 
+        svg {
+            position: relative;
+            // width: 100%;
+        }
 
     }
 
@@ -57,7 +64,7 @@ export default {
         z-index: -1;
     }
 
-    svg {
+    &>svg {
         position: absolute;
         top: -10px;
         left: 200px;

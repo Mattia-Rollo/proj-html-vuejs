@@ -18,7 +18,7 @@
                     <CardComp :array="listCards" :path="'/public/images/artist-box-image-'" :typeImage="'.png'" />
                 </div>
                 <div class="row py-5 justify-content-between">
-                    <div class="col-6 position-relative">
+                    <div class="col-md-6 col-12 position-relative">
                         <div id="quote" class="text-center"><img src="/public/images/artist-quote-icon.png" alt=""
                                 class="img-fluid">
                         </div>
@@ -26,7 +26,7 @@
                             Create Like You Mean it</div>
                         <div class="uptitle py-4 fs-1">Martin Garrix</div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-12">
                         <p>As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action.
                             iHelp you get you back on track to being the productive, creative, meaningful and authentic
                             artist you truly want to be. i support artists in crafting and living a creative life as
