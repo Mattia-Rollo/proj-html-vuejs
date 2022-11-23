@@ -87,6 +87,12 @@ export default {
         position: absolute;
     }
 
+    h2 {
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 0.7rem 0 0 0;
+    }
+
     &>img:first-child {
         top: 50px;
         left: -100px;

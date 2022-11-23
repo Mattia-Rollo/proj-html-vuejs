@@ -4,11 +4,11 @@
             <div class="uptitle">Testimonials</div>
             <h2 class="text-center">Why do people love me?</h2>
             <!-- <div class="box"></div> -->
-            <div class="row pb-5">
+            <div class="d-flex ">
                 <CardTestimonial :array="listTestimonials" />
             </div>
             <div class="thumb">
-                <span class="dot" v-for="(item, index) in listTestimonials"></span>
+                <span class="dot" v-for="(item, index) in listTestimonials" :class="index == 1 ? 'active' : ''"></span>
             </div>
         </div>
     </div>
@@ -64,30 +64,34 @@ export default {
 @use '../assets/style/partials/variables' as *;
 
 .wrapper {
-    padding: 1rem 0;
+    padding: 1.5rem 0 0;
     background-color: $beige-bg;
 
     .box {}
 
     h2 {
-        padding: 0 0 80px 0;
+        padding: 0 0 3rem 0;
     }
 }
 
 .thumb {
     display: table;
     margin: 0 auto;
+    padding: 1rem 0;
 }
 
 .dot {
     display: inline-block;
-    margin: 0 auto;
-    padding: 0.5rem;
-    width: 3px;
-    height: 3px;
+    // margin: 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(79, 79, 79);
     z-index: 1000;
     margin: 0 1rem;
+}
+
+.active {
+    background-color: black;
 }
 </style>

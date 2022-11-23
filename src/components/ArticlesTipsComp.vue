@@ -12,7 +12,7 @@
                         <div class="mycard "
                             :class="index < 1 ? 'top-50' : index > 1 ? '' : 'center position-relative'">
                             <img :src="card.img" alt="" class="img-fluid" :class="index == 1 ? 'filter' : ''">
-                            <div class="body-mycard p-2"
+                            <div class=" p-2"
                                 :class="index == 1 ? 'position-absolute bottom-0 p-3 text-light' : 'body-mycard p-2'">
 
                                 <div :class="index != 1 ? 'text-secondary' : ''">ARTIST</div>
@@ -76,7 +76,7 @@ export default {
                     img: '/images/artist-blog-01-480x356.jpg',
                     title: 'Pocket Sized Notebooks Hold Miniature Paintings',
                     date: 'May 15,2020',
-                    views: '603',
+                    views: '536',
                     link: '',
                 },
             ]
@@ -109,6 +109,8 @@ export default {
         // width: 200px;
         background-color: $white;
         box-shadow: 0px 0px 10px 1px #67676768;
+        overflow: hidden;
+        cursor: pointer;
 
         span {
             display: inline-block;
@@ -125,10 +127,18 @@ export default {
             font-size: 0.9rem;
         }
 
-        #date {}
+        img {
+            transition: transform 1s;
+        }
 
+        &:hover img {
+            transform: scale(1.1);
+        }
 
-        #views {}
+        .body-mycard {
+            z-index: 1000;
+        }
+
     }
 
 
@@ -145,7 +155,10 @@ export default {
     img {
         width: 105%;
         object-fit: cover;
+
     }
+
+
 }
 
 .col:first-child {

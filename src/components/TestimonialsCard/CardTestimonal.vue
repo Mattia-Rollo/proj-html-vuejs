@@ -40,16 +40,17 @@ export default {
 }
 
 .myCard {
+    width: 450px;
     padding: 1.5rem;
     background-color: white;
-
     border-radius: 10px;
     opacity: 0.6;
+    margin: 0 0.5rem;
 }
 
 .active {
     opacity: 1;
-    transform: scale(1.2);
+    // transform: scale(1.2);
     // transform: translatex(-50px, 0);
     z-index: 200;
     border: 1px solid $light;
