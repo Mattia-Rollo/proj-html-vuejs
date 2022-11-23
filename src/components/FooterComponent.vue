@@ -156,11 +156,12 @@ ul {
 a {
     text-decoration: none;
     color: $boulder;
+    font-weight: 600;
 
 }
 
 a:hover {
-    color: $cod-gray;
+    color: $primary-color;
 }
 
 .instagram {
