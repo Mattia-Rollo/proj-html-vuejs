@@ -2,7 +2,7 @@
     <div class=" text-center banner ">
         <span>start TOMORROW! Our biggest event of the year... </span>
         <span><i class="fa-regular fa-clock"></i><span>{{ getTime() }}</span></span>
-        <button class="btn btn-danger"> Get Ticket</button>
+        <button class="btn"> Get Ticket</button>
     </div>
 </template>
 
@@ -45,9 +45,5 @@ export default {
             font-weight: 700;
         }
     }
-}
-
-.btn {
-    padding: 0.2rem 1.2rem;
 }
 </style>

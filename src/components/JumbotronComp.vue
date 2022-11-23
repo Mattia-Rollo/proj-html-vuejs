@@ -31,7 +31,7 @@
         <div class="hero text-center">
             <div class="uptitle">Hello, i'm Martin</div>
             <h1>Artist Coaching And Mentoring Might Be For You</h1>
-            <button class="btn btn-danger">Get started today</button>
+            <button class="btn">Get started today</button>
         </div>
     </div>
 </template>
