@@ -8,13 +8,13 @@
             </svg>
         </div>
 
+        <img id="shape" src="/images/maxcoach-shape-12-150x150.png" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="250px" height="250px" viewBox="0 0 200 202">
+            <path class="fill" fill="#b1e4f4"
+                d="M139.374493,198.087515 C155.702187,206.99353 190.724846,197.001323 197.677982,159.049528 C204.827153,120.027728 184.496324,118.997566 188.045232,104.801934 C202.287755,83.6528313 204.827153,56.662651 190.073179,40.4146034 C153.570125,2.39058926 144.444362,48.0194062 114.025151,20.1351292 C101.727304,7.83728238 83.0989526,-6.73517414 56.2286492,3.40456297 C18.2385839,17.7404371 27.3303985,47.659333 27.3303985,69.3128542 C27.3303985,76.9370868 3.11408002,91.2696589 0.460095291,110.885776 C-2.88628833,135.619549 12.6277797,168.175291 27.3303985,179.329002 C50.6517938,205.692318 86.6478605,199.608476 102.87144,190.482713 C116.802125,182.646702 128.220783,192.003673 139.374493,198.087515 Z">
+            </path>
+        </svg>
         <div class="video">
-            <img src="/images/maxcoach-shape-12-150x150.png" alt="">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="250px" height="250px" viewBox="0 0 200 202">
-                <path class="fill" fill="#b1e4f4"
-                    d="M139.374493,198.087515 C155.702187,206.99353 190.724846,197.001323 197.677982,159.049528 C204.827153,120.027728 184.496324,118.997566 188.045232,104.801934 C202.287755,83.6528313 204.827153,56.662651 190.073179,40.4146034 C153.570125,2.39058926 144.444362,48.0194062 114.025151,20.1351292 C101.727304,7.83728238 83.0989526,-6.73517414 56.2286492,3.40456297 C18.2385839,17.7404371 27.3303985,47.659333 27.3303985,69.3128542 C27.3303985,76.9370868 3.11408002,91.2696589 0.460095291,110.885776 C-2.88628833,135.619549 12.6277797,168.175291 27.3303985,179.329002 C50.6517938,205.692318 86.6478605,199.608476 102.87144,190.482713 C116.802125,182.646702 128.220783,192.003673 139.374493,198.087515 Z">
-                </path>
-            </svg>
             <a href="" class="link-youtube"><img src="/images/icon-youtube-play.png" alt=""></a>
             <img src="/images/artist-video-poster.jpg" alt="" class="img-fluid">
 
@@ -50,6 +50,20 @@ export default {
 
     }
 
+    #shape {
+        position: absolute;
+        top: 50px;
+        left: 250px;
+        z-index: -1;
+    }
+
+    svg {
+        position: absolute;
+        top: -10px;
+        left: 200px;
+        z-index: -2;
+    }
+
 }
 
 .video {
@@ -57,37 +71,41 @@ export default {
     display: table;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 
     a {
         display: flex;
         position: absolute;
         width: 100%;
         height: 100%;
+        transition: all 1s;
 
         img {
             margin: auto;
+            z-index: 100;
+
         }
     }
 
-    &>img:first-child {
-        position: absolute;
-        top: -10px;
-        left: -60px;
-        z-index: -1;
-    }
+
 
     img {
         display: inline-block;
         margin: 0 auto;
+        transition: transform 1s;
 
     }
 
-    svg {
-        position: absolute;
-        top: -50px;
-        left: -120px;
-        z-index: -2;
+    a:hover~img {
+        transform: scale(1.2);
+        z-index: -100;
     }
+
+    img:last-child:hover {
+        transform: scale(1.2);
+    }
+
+
 
 }
 </style>

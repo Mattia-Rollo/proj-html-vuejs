@@ -50,7 +50,7 @@ export default {
     }
 
     &:hover .mybody-Card {
-        border-color: $thunderbird-red;
+        border-color: $primary-color;
         border-radius: 10px;
         transform: translateY(-30px);
     }

@@ -18,24 +18,21 @@
                     <CardComp :array="listCards" :path="'/public/images/artist-box-image-'" :typeImage="'.png'" />
                 </div>
                 <div class="row py-5 justify-content-between">
-                    <div class="col-5 position-relative">
-                        <div class="text-center"><img src="/public/images/artist-quote-icon.png" alt=""></div>
-                        <div class="fw-bold display-6 text-center">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Natus,
-                            reiciendis?</div>
-                        <div class="uptitle py-5">Martin Garrix</div>
+                    <div class="col-6 position-relative">
+                        <div id="quote" class="text-center"><img src="/public/images/artist-quote-icon.png" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="fw-bold display-6 text-center px-5">I coach and mentor visual artists, like you, to
+                            Create Like You Mean it</div>
+                        <div class="uptitle py-4 fs-1">Martin Garrix</div>
                     </div>
                     <div class="col-6">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos quo fugiat quidem illum at
-                            corporis?
-                            Repellat perferendis placeat sed itaque odio error aut rem in maiores voluptatibus soluta,
-                            sapiente
-                            recusandae numquam laborum corrupti consequuntur pariatur! Ducimus natus voluptates earum
-                            laudantium
-                            ex at nulla eos maxime eveniet voluptate, ullam doloribus aliquam!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, delectus?</p>
-                        <button class="btn btn-danger">get started today</button>
+                        <p>As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action.
+                            iHelp you get you back on track to being the productive, creative, meaningful and authentic
+                            artist you truly want to be. i support artists in crafting and living a creative life as
+                            well as felling good about themselves and their art</p>
+                        <p>As an artist and an educator fro nearly 30 years, I understand what it takes to create.</p>
+                        <button class="btn">get started today</button>
                     </div>
                 </div>
             </div>
@@ -110,6 +107,16 @@ export default {
         top: 400px;
         z-index: -1;
     }
+
+    button {
+        padding: 0.5rem 1.2rem;
+    }
+}
+
+#quote {
+    position: absolute;
+    left: 50%;
+    top: -15%;
 }
 
 .mycontainer {
