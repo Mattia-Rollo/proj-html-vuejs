@@ -11,7 +11,8 @@
                         v-for="(card,index) in cards" :key="index">
                         <div class="mycard "
                             :class="index < 1 ? 'top-50' : index > 1 ? '' : 'center position-relative'">
-                            <img :src="card.img" alt="" class="img-fluid" :class="index == 1 ? 'filter' : ''">
+                            <div class="overflow-hidden"><img :src="card.img" alt="" class="img-fluid"
+                                    :class="index == 1 ? 'filter' : ''"></div>
                             <div class=""
                                 :class="index == 1 ? 'position-absolute bottom-0 p-3 text-light' : 'body-mycard p-2'">
 
