@@ -9,7 +9,7 @@
         <div class="pittura">
             <img src="/images/artist-hero-image-02.jpg" alt="" class="img-fluid">
         </div>
-        <div class="artist" :style="{ right: artist.x ? artist.x : '' + 'px', top: artist.y + 'px' }">
+        <div class="artist">
             <img src="/images/artist-hero-image-04.jpg" alt="" class="img-fluid">
         </div>
         <div class="monkey">
