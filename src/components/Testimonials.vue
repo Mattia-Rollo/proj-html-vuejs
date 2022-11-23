@@ -8,7 +8,7 @@
                 <CardTestimonial :array="listTestimonials" />
             </div>
             <div class="thumb">
-                <span class="dot" v-for="(item, index) in listTestimonials" :class="index == 1 ? 'active' : ''"></span>
+                <span class="dot" v-for="(item, index) in 4" :class="index == 1 ? 'active' : ''"></span>
             </div>
         </div>
     </div>
@@ -77,21 +77,32 @@ export default {
 .thumb {
     display: table;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dot {
+    cursor: pointer;
     display: inline-block;
     // margin: 1rem;
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.6rem;
+    height: 0.6rem;
     border-radius: 50%;
     background-color: rgb(79, 79, 79);
     z-index: 1000;
     margin: 0 1rem;
+    transition: all 0.4s;
+
+    &:hover {
+        background-color: black;
+        transform: scale(1.5);
+    }
 }
 
 .active {
     background-color: black;
+    transform: scale(1.5);
 }
 </style>

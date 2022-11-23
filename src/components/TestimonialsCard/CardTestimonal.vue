@@ -1,12 +1,12 @@
 <template>
     <div class="col h-100" v-for="(item, index) in  array" :key="index">
         <div class="myCard" :class="index == activeIndex ? 'active' : ''">
-            <h4>{{ item.title }}</h4>
+            <h4 class="py-2">{{ item.title }}</h4>
             <p>{{ item.comment }}</p>
-            <div class="d-flex">
+            <div class="d-flex gap-3">
                 <div class="avatar"><img :src="`/images/artist-testimonial-avatar-${item.avatarImg}.jpg`" alt=""
                         class="img-fluid"> </div>
-                <div>
+                <div class="d-flex flex-column  justify-content-evenly">
                     <strong>{{ item.name }}</strong>
                     <div>{{ item.job }}</div>
                 </div>
