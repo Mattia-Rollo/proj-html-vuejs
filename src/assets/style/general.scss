@@ -11,12 +11,15 @@ $fa-font-path: "./webfonts";
 @import url("https://fonts.cdnfonts.com/css/rosella");
 
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('../style/myfont/Rossela-Demo.ttf') format('truetype');
+  font-family: "MyWebFont";
+  src: url("../style/myfont/Rossela-Demo.ttf") format("truetype");
 }
 // .container{
 //   max-width: 1450px;
 // }
+body {
+  overflow-x: hidden;
+}
 .uptitle {
   font-family: "MyWebFont", Fallback, sans-serif;
   font-size: 3rem;

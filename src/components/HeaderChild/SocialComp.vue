@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="d-none d-lg-block">
         <a href=""><i class="fa-brands fa-twitter"></i></a>
         <a href=""><i class="fa-brands fa-facebook-f"></i></a>
         <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -24,6 +24,7 @@ export default {
 
 div {
     color: $cod-gray;
+
 
     a {
         color: $cod-gray;

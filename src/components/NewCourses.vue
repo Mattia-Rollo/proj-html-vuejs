@@ -8,7 +8,7 @@
                 Artist Coaching
             </div>
             <h2 class="text-center pb-5">Lastest Online Courses</h2>
-            <div class="row g-3">
+            <div class="row   g-2">
                 <CardComp :array="listCourses" :path="'/public/images/artist-course-'" :typeImage="'-480x480.jpg'" />
             </div>
         </div>
