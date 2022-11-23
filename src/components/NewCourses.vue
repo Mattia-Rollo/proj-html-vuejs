@@ -2,7 +2,7 @@
     <div class="wrapper">
         <img src="/images/artist-shape-01-300x288.png" alt="">
         <img class="right-shape" src="/images/artist-shape-01-300x288.png" alt="">
-        <div class="text-side">Courses</div>
+        <div class="text-side d-none d-lg-block">Courses</div>
         <div class="container">
             <div class="uptitle">
                 Artist Coaching
@@ -129,6 +129,7 @@ export default {
         display: inline-block;
         font-weight: 700;
         top: 50%;
+        z-index: -100;
         // text-transform: uppercase;
         transform: rotate(90deg);
         -webkit-text-stroke: 1px $beige;

@@ -1,7 +1,8 @@
 <template>
-    <div class="col-lg-3 col-sm-6 col-9 m-auto" v-for="(item, index) in array" :key="index">
+    <div class="col-lg-3 col-sm-6 col-12" v-for="(item, index) in array" :key="index">
         <div class="mycard" :class="item.price ? 'move' : ''">
-            <img :src="path + item.image + typeImage" :alt="item.alt" class="img-fluid">
+            <div class="image"><img :src="path + item.image + typeImage" :alt="item.alt" class="img-fluid"></div>
+
             <div :class="item.price ? 'mybody-Card' : ''">
                 <div v-if="item.price" class="price">{{ item.price }}</div>
                 <h5>{{ item.title }}</h5>
@@ -11,6 +12,7 @@
                     <span><i class="fa-regular fa-user"></i><span>{{ item.students }}</span> Students</span>
                 </div>
             </div>
+
         </div>
     </div>
 </template>
@@ -34,9 +36,15 @@ export default {
     cursor: pointer;
     overflow: hidden;
 
+    .image {
+        overflow: hidden;
+    }
+
+
     .mybody-Card {
         padding: 1rem;
         transition: all 0.5s;
+        max-width: calc(100% - 30px);
         background-color: $white;
         border: 1px solid transparent;
     }
@@ -48,6 +56,7 @@ export default {
     }
 
 }
+
 
 .move img {
     transition: all 0.5S;
