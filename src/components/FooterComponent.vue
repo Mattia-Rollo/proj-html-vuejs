@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="container text-black py-5">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <div class="address">
                         <h4>
                             Address
@@ -15,7 +15,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2" v-for="(item, index) in listLinks" :key="index">
+                <div class="col-12 col-lg-2" v-for="(item, index) in listLinks" :key="index">
                     <h4>{{ item.title }}</h4>
                     <ul>
                         <li v-for="(link, index) in item.links" :key="index"><a :href="link.link">{{ link.name }}</a>
@@ -23,7 +23,7 @@
 
                     </ul>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-lg-4">
                     <div class="instagram">
                         <div>
                             <h4 class=" d-inline-block pe-2">Instagram</h4><span class="fs-5"><a
@@ -137,7 +137,7 @@ export default {
         color: $boulder;
 
         i {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             padding: 0.5rem;
         }
     }
@@ -167,9 +167,15 @@ a:hover {
 .instagram {
     img {
         width: 120px;
+        transition: all 0.4s;
+
+        &:hover {
+            filter: grayscale(10);
+        }
     }
 
     a {
+        font-size: 1.5rem;
         color: $tulip-tree;
     }
 }
@@ -182,7 +188,7 @@ a:hover {
 
     a {
         text-decoration: none;
-        background-color: rgb(222, 102, 28);
+        background-color: $primary-color;
         color: $white;
         padding: 1rem 1rem;
         width: 55px;
