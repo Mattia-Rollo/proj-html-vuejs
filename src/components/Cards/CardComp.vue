@@ -1,10 +1,10 @@
 <template>
-    <div class="col-lg-3 col-md" v-for="(item, index) in array" :key="index">
+    <div class="col-lg-3 col-sm-6 col-9 m-auto" v-for="(item, index) in array" :key="index">
         <div class="mycard" :class="item.price ? 'move' : ''">
             <img :src="path + item.image + typeImage" :alt="item.alt" class="img-fluid">
             <div :class="item.price ? 'mybody-Card' : ''">
                 <div v-if="item.price" class="price">{{ item.price }}</div>
-                <h4>{{ item.title }}</h4>
+                <h5>{{ item.title }}</h5>
                 <p>{{ item.overview }}</p>
                 <div v-if="item.lessons" class="info">
                     <span><i class="fa-regular fa-file"></i><span>{{ item.lessons }}</span> Lessons</span>
@@ -66,6 +66,7 @@ export default {
 
 .info {
     color: grey;
+    font-size: 1rem;
 
     span {
         padding: 0 0.5rem;
