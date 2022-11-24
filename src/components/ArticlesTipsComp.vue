@@ -130,7 +130,7 @@ export default {
         }
 
         img {
-            transition: transform 1s;
+            transition: all 1s;
         }
 
         &:hover img {

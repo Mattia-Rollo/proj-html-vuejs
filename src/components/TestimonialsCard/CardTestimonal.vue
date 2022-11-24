@@ -46,6 +46,7 @@ export default {
     border-radius: 10px;
     opacity: 0.6;
     margin: 0 0.5rem;
+
 }
 
 .active {
