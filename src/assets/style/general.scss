@@ -17,6 +17,9 @@ $fa-font-path: "./webfonts";
 // .container{
 //   max-width: 1450px;
 // }
+html{
+  scroll-behavior:smooth;
+}
 body {
   overflow-x: hidden;
 }

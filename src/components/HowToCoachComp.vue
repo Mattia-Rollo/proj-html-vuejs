@@ -17,7 +17,7 @@
                 <div class="row flex-column flex-sm-row align-items-end py-5 text-center text-sm-start">
                     <CardComp :array="listCards" :path="'/public/images/artist-box-image-'" :typeImage="'.png'" />
                 </div>
-                <div class="row py-5 justify-content-between">
+                <div id="" class="row py-5 justify-content-between">
                     <div class="col-md-6 col-12 position-relative">
                         <div id="quote" class="text-center"><img src="/public/images/artist-quote-icon.png" alt=""
                                 class="img-fluid">

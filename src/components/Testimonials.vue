@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper ">
         <div class="container">
             <div class="uptitle">Testimonials</div>
             <h2 class="text-center">Why do people love me?</h2>
@@ -10,6 +10,7 @@
             <div class="thumb">
                 <span class="dot" v-for="(item, index) in 4" :class="index == 1 ? 'active' : ''"></span>
             </div>
+
         </div>
     </div>
 </template>
@@ -27,7 +28,7 @@ export default {
                     comment: 'I\'m a very strict person so I require everything to be organized and neat. Then, I\'ll be able to make things right anc shine. MaxCoach guys just git me.',
                     avatarImg: '01',
                     name: 'Florence Themes',
-                    job: '/Multimedia Admin',
+                    job: '/ Multimedia Admin',
 
                 },
                 {
@@ -35,7 +36,7 @@ export default {
                     comment: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me',
                     avatarImg: '02',
                     name: 'Mina Hollance',
-                    job: '/Freelancer',
+                    job: '/ Freelancer',
 
                 },
                 {
@@ -43,20 +44,23 @@ export default {
                     comment: 'I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
                     avatarImg: '03',
                     name: 'Madley Pondor',
-                    job: '/IT Specialist',
+                    job: '/ IT Specialist',
 
                 },
-                // {
-                //     title: 'The Best coaching I ever had',
-                //     comment: 'With Thrive’s help, we were able to increase the functionality of our website dramatically while cutting our costs. Our website is much more easy to use, has tons of more features than before and is incredibly easy to maintain.',
-                //     avatarImg: '04',
-                //     name: 'Joe Satriani',
-                //     job: '/CEO google',
+                {
+                    title: 'The Best coaching I ever had',
+                    comment: 'With Thrive’s help, we were able to increase the functionality of our website dramatically while cutting our costs. Our website is much more easy to use, has tons of more features than before and is incredibly easy to maintain.',
+                    avatarImg: '04',
+                    name: 'Joe Satriani',
+                    job: '/ CEO google',
 
-                // },
+                },
             ]
         }
     },
+    methods: {
+
+    }
 }
 </script>
 
@@ -64,8 +68,12 @@ export default {
 @use '../assets/style/partials/variables' as *;
 
 .wrapper {
+    // margin: 0;
+    // width: 2000px;
     padding: 1.5rem 0 0;
     background-color: $beige-bg;
+    scroll-behavior: smooth;
+
 
     .box {}
 

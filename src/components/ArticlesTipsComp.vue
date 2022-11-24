@@ -1,5 +1,6 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper position-relative">
+        <div class="circle"></div>
         <div class="mycontainer">
             <div class="container-lg py-5">
                 <div class="pb-5">
@@ -96,7 +97,7 @@ export default {
     // height: 100vh;
     background-image: url('/images/maxcoach-shape-03.png');
     background-size: 100%;
-
+    filter: hue-rotate(50deg);
     background-position: center;
     background-repeat: no-repeat;
 
@@ -162,6 +163,18 @@ export default {
 
 }
 
+.circle {
+    position: absolute;
+    display: inline-block;
+    border: 10px solid $primary-color;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    left: 250px;
+    top: 160px;
+    z-index: 10;
+}
+
 .col:first-child {
     align-self: center;
 }
@@ -169,8 +182,5 @@ export default {
 .col:last-child {
     position: relative;
     top: 80px;
-    // height: 100%;
-
-
 }
 </style>

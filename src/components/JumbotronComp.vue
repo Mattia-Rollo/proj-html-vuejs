@@ -53,11 +53,11 @@ export default {
     },
     methods: {
 
-        mouseMove(event) {
-            this.artist.x = event.clientX / 15 * 0.5
-            this.artist.y = (event.clientY + 200) / 10
-            console.log(event.clientY, this.artist.y);
-        }
+        // mouseMove(event) {
+        //     this.artist.x = event.clientX / 15 * 0.5
+        //     this.artist.y = (event.clientY + 200) / 10
+        //     console.log(event.clientY, this.artist.y);
+        // }
     }
 }
 </script>
