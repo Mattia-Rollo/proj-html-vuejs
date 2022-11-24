@@ -1,6 +1,6 @@
 <template>
     <div class="col-lg-3 col-sm-6 col-12" v-for="(item, index) in array" :key="index">
-        <div class="mycard" :class="item.price ? 'moveImgEffect' : '', index == 1 || index == 3 ? 'pt-3' : ''">
+        <div class="mycard" :class="item.price ? 'moveImgEffect' : ''">
             <div class="image"><img :src="path + item.image + typeImage" :alt="item.alt" class="img-fluid"></div>
 
             <div :class="item.price ? 'mybody-Card' : ''">
