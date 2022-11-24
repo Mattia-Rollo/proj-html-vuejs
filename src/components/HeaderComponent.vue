@@ -3,9 +3,10 @@
         <div class="logo">
             <img src="/images/dark-logo.png" alt="">
         </div>
-        <nav>
+        <nav class="d-none d-md-block">
             <NavbarComp :menu="MenuNav" />
         </nav>
+        <div class="d-block d-md-none fs-3"><i class="fa-solid fa-bars"></i></div>
         <SocialComp />
     </div>
 </template>

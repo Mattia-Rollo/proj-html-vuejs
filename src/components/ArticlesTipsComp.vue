@@ -97,7 +97,7 @@ export default {
     // height: 100vh;
     background-image: url('/images/maxcoach-shape-03.png');
     background-size: 100%;
-    filter: hue-rotate(50deg);
+
     background-position: center;
     background-repeat: no-repeat;
 
