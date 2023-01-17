@@ -9,7 +9,7 @@
             </div>
             <h2 class="text-center pb-5">Lastest Online Courses</h2>
             <div class="row   g-2">
-                <CardComp :array="listCourses" :path="'/public/images/artist-course-'" :typeImage="'-480x480.jpg'" />
+                <CardComp :array="listCourses" :path="'/images/artist-course-'" :typeImage="'-480x480.jpg'" />
             </div>
         </div>
         <div class="text-center py-5">
