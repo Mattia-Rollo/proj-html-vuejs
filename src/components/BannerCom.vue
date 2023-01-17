@@ -17,7 +17,7 @@ export default {
     methods: {
         getTime() {
             this.time.setHours(0, 0, 0, 0);
-            console.log(this.time)
+            // console.log(this.time)
             return this.time.toLocaleTimeString();
         }
     },
