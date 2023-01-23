@@ -1,7 +1,7 @@
 <template>
     <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
-            <img src="./images/dark-logo.png" alt="">
+            <img src="/images/dark-logo.png" alt="">
         </div>
         <nav class="d-none d-md-block">
             <NavbarComp :menu="MenuNav" />

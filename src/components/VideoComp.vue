@@ -15,8 +15,8 @@
             </path>
         </svg>
         <div class="video">
-            <a href="" class="link-youtube"><img src="./images/icon-youtube-play.png" alt=""></a>
-            <img src="./images/artist-video-poster.jpg" alt="" class="img-fluid">
+            <a href="" class="link-youtube"><img src="/images/icon-youtube-play.png" alt=""></a>
+            <img src="/images/artist-video-poster.jpg" alt="" class="img-fluid">
 
         </div>
     </div>
