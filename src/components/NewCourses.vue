@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
-        <img src="/images/artist-shape-01-300x288.png" alt="">
-        <img class="right-shape" src="/images/artist-shape-01-300x288.png" alt="">
+        <img src="./images/artist-shape-01-300x288.png" alt="">
+        <img class="right-shape" src="./images/artist-shape-01-300x288.png" alt="">
         <div class="text-side d-none d-lg-block">Courses</div>
         <div class="container">
             <div class="uptitle">
@@ -9,7 +9,7 @@
             </div>
             <h2 class="text-center pb-5">Lastest Online Courses</h2>
             <div class="row   g-2">
-                <CardComp :array="listCourses" :path="'/images/artist-course-'" :typeImage="'-480x480.jpg'" />
+                <CardComp :array="listCourses" :path="'./images/artist-course-'" :typeImage="'-480x480.jpg'" />
             </div>
         </div>
         <div class="text-center py-5">

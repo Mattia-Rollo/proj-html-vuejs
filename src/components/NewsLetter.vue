@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper d-flex">
-        <img class="d-none d-md-block" src="/images/artist-shape-color-paint-top-left.png" alt="">
+        <img class="d-none d-md-block" src="./images/artist-shape-color-paint-top-left.png" alt="">
 
 
         <div class="container-lg ">
@@ -17,7 +17,7 @@
             </div>
         </div>
 
-        <img class="d-none d-md-block" src="/images/artist-shape-color-paint-bottom-right.png" alt="">
+        <img class="d-none d-md-block" src="./images/artist-shape-color-paint-bottom-right.png" alt="">
     </div>
 </template>
 

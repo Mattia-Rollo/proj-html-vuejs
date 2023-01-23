@@ -1,19 +1,19 @@
 <template>
     <div class="jumbotron" @mousemove="mouseMove">
-        <img src="/images/artist-shape-01.png" alt="" class="w-50">
-        <img src="/images/artist-shape-02-768x415.png" alt="" class="w-50">
-        <img src="/images/artist-shape-03.png" alt="" class="puntini">
-        <img src="/images/artist-shape-04-127x300.png" alt="" class="w-10 piuma">
-        <img id="macchia-pennello" src="/images/artist-shape-05-300x198.png" alt="" class="">
-        <div class="face"><img src="/images/artist-hero-image-03.png"></div>
+        <img src="./images/artist-shape-01.png" alt="" class="w-50">
+        <img src="./images/artist-shape-02-768x415.png" alt="" class="w-50">
+        <img src="./images/artist-shape-03.png" alt="" class="puntini">
+        <img src="./images/artist-shape-04-127x300.png" alt="" class="w-10 piuma">
+        <img id="macchia-pennello" src="./images/artist-shape-05-300x198.png" alt="" class="">
+        <div class="face"><img src="./images/artist-hero-image-03.png"></div>
         <div class="pittura">
-            <img src="/images/artist-hero-image-02.jpg" alt="" class="img-fluid">
+            <img src="./images/artist-hero-image-02.jpg" alt="" class="img-fluid">
         </div>
         <div class="artist">
-            <img src="/images/artist-hero-image-04.jpg" alt="" class="img-fluid">
+            <img src="./images/artist-hero-image-04.jpg" alt="" class="img-fluid">
         </div>
         <div class="monkey">
-            <img src="/images/artist-hero-image-01.jpg" alt="" class="">
+            <img src="./images/artist-hero-image-01.jpg" alt="" class="">
         </div>
         <svg id="macchia-azzurra" xmlns="http://www.w3.org/2000/svg" version="1.1" width="25vw" height="25vw"
             viewBox="0 0 200 202">

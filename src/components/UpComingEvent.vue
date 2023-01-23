@@ -13,19 +13,19 @@
                     <div class="col-md-6 col-12" v-for="(item, index) in listEvents" :key="index">
                         <div class="mycard d-flex">
                             <div v-if="index < 2">
-                                <img :src="`/images/artist-event-${item.path_img}-250x300.jpg`" alt="" class="h-100">
+                                <img :src="`./images/artist-event-${item.path_img}-250x300.jpg`" alt="" class="h-100">
                             </div>
                             <div class="p-4 d-flex flex-column justify-content-center"
                                 :class="{ 'text-end': index >= 2 }">
                                 <div class="text-secondary py-2">{{ item.date }}</div>
                                 <h4>{{ item.event }}</h4>
                                 <div class="text-secondary"><i class="fa-solid fa-location-dot px-1"></i>{{
-                                        item.location
+                                    item.location
                                 }}
                                 </div>
                             </div>
                             <div v-if="index >= 2">
-                                <img :src="`/images/artist-event-${item.path_img}-250x300.jpg`" alt="" class="h-100">
+                                <img :src="`./images/artist-event-${item.path_img}-250x300.jpg`" alt="" class="h-100">
                             </div>
                         </div>
                     </div>
