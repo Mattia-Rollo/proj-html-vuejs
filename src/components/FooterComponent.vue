@@ -29,10 +29,12 @@
                             <h4 class=" d-inline-block pe-2">Instagram</h4><span class="fs-5"><a
                                     href="">@maxcoach</a></span>
                         </div>
-                        <a href=""><img src="./images/120084500_197897808368764_8114555493043279565_n.jpg" alt=""></a>
-                        <a href=""><img src="./images/120012142_177596140500760_8623485824101406058_n.jpg" alt=""
+                        <a href=""><img src="@public/images/120084500_197897808368764_8114555493043279565_n.jpg"
+                                alt=""></a>
+                        <a href=""><img src="@public/images/120012142_177596140500760_8623485824101406058_n.jpg" alt=""
                                 class="m-3"></a>
-                        <a href=""><img src="./images/120099363_364334431619755_7198812647386067017_n.jpg" alt=""></a>
+                        <a href=""><img src="@public/images/120099363_364334431619755_7198812647386067017_n.jpg"
+                                alt=""></a>
 
 
                     </div>

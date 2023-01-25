@@ -61,21 +61,21 @@ export default {
         return {
             cards: [
                 {
-                    img: '/images/120084500_197897808368764_8114555493043279565_n.jpg',
+                    img: '@public/images/120084500_197897808368764_8114555493043279565_n.jpg',
                     title: 'Brush Strokes Energize Trees in Paintings',
                     date: 'May 15, 2020',
                     views: '688',
                     link: '',
                 },
                 {
-                    img: '/images/artist-blog-02-500x680.jpg',
+                    img: '@public/images/artist-blog-02-500x680.jpg',
                     title: 'Connestion Between Self- Portraits and Identity',
                     date: 'May 15, 2020',
                     views: '397',
                     link: '',
                 },
                 {
-                    img: '/images/artist-blog-01-480x356.jpg',
+                    img: '@public/images/artist-blog-01-480x356.jpg',
                     title: 'Pocket Sized Notebooks Hold Miniature Paintings',
                     date: 'May 15,2020',
                     views: '536',

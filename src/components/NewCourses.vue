@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
-        <img src="./images/artist-shape-01-300x288.png" alt="">
-        <img class="right-shape" src="./images/artist-shape-01-300x288.png" alt="">
+        <img src="@public/images/artist-shape-01-300x288.png" alt="">
+        <img class="right-shape" src="@public/images/artist-shape-01-300x288.png" alt="">
         <div class="text-side d-none d-lg-block">Courses</div>
         <div class="container">
             <div class="uptitle">
