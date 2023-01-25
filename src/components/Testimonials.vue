@@ -75,7 +75,7 @@ export default {
     scroll-behavior: smooth;
 
 
-    .box {}
+
 
     h2 {
         padding: 0 0 3rem 0;

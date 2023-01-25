@@ -4,7 +4,7 @@
             <h4 class="py-2">{{ item.title }}</h4>
             <p>{{ item.comment }}</p>
             <div class="d-flex gap-3">
-                <div class="avatar"><img :src="`@public/images/artist-testimonial-avatar-${item.avatarImg}.jpg`" alt=""
+                <div class="avatar"><img :src="`./images/artist-testimonial-avatar-${item.avatarImg}.jpg`" alt=""
                         class="img-fluid"> </div>
                 <div class="d-flex flex-column  justify-content-evenly">
                     <strong>{{ item.name }}</strong>

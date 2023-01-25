@@ -12,7 +12,7 @@
                         v-for="(card,index) in cards" :key="index">
                         <div class="mycard "
                             :class="index < 1 ? 'top-50' : index > 1 ? '' : 'center position-relative'">
-                            <div class="overflow-hidden"><img :src="card.img" alt="" class="img-fluid"
+                            <div class="overflow-hidden"><img :src="'.' + card.img" alt="" class="img-fluid"
                                     :class="index == 1 ? 'filter' : ''"></div>
                             <div class=""
                                 :class="index == 1 ? 'position-absolute bottom-0 p-3 text-light' : 'body-mycard p-2'">
@@ -61,21 +61,21 @@ export default {
         return {
             cards: [
                 {
-                    img: '@public/images/120084500_197897808368764_8114555493043279565_n.jpg',
+                    img: '/images/120084500_197897808368764_8114555493043279565_n.jpg',
                     title: 'Brush Strokes Energize Trees in Paintings',
                     date: 'May 15, 2020',
                     views: '688',
                     link: '',
                 },
                 {
-                    img: '@public/images/artist-blog-02-500x680.jpg',
+                    img: '/images/artist-blog-02-500x680.jpg',
                     title: 'Connestion Between Self- Portraits and Identity',
                     date: 'May 15, 2020',
                     views: '397',
                     link: '',
                 },
                 {
-                    img: '@public/images/artist-blog-01-480x356.jpg',
+                    img: '/images/artist-blog-01-480x356.jpg',
                     title: 'Pocket Sized Notebooks Hold Miniature Paintings',
                     date: 'May 15,2020',
                     views: '536',
@@ -95,7 +95,7 @@ export default {
     padding: 1rem 0;
     background-color: $grey-Articles-Tips;
     // height: 100vh;
-    background-image: url('/images/maxcoach-shape-03.png');
+    background-image: url('@public/images/maxcoach-shape-03.png');
     background-size: 100%;
 
     background-position: center;
